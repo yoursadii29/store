@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AddonMarket — Minecraft Addons & Packs</title>
+  <meta name="description" content="Clean landing page template for selling Minecraft addons, texture packs and more." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#16a34a;--muted:#9aa5b1;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,#071025 0%, #0b1724 100%); color:#e6eef6; -webkit-font-smoothing:antialiased; line-height:1.45}
+    .container{max-width:1100px;margin:36px auto;padding:0 20px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;background:linear-gradient(135deg,#06b6d4,#7c3aed);display:grid;place-items:center;border-radius:10px;font-weight:700}
+    nav a{color:var(--muted);margin-left:18px;text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:28px}
+    .card{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6);}
+    h1{font-size:28px;margin-bottom:10px}
+    p.lead{color:var(--muted);margin-bottom:16px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:#04121a;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);font-weight:700}
+    .features{display:flex;gap:12px;margin-top:18px}
+    .feature{background:var(--glass);padding:12px;border-radius:10px;flex:1;text-align:center}
+    .store-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+    .addon{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:12px;border-radius:12px;display:flex;gap:12px;align-items:center}
+    .addon img{width:72px;height:72px;border-radius:8px;object-fit:cover}
+    .addon .meta{flex:1}
+    .badge{display:inline-block;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.04);font-size:13px}
+    footer{margin-top:38px;padding:28px 0;color:var(--muted);text-align:center}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;}.store-cards{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}}
+    /* small utilities */
+    .muted{color:var(--muted)}
+    .pill{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px}
+    .price{font-weight:800}
+    .download{background:linear-gradient(90deg,#0ea5a4,#06b6d4);color:#021018;padding:8px 10px;border-radius:10px;text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AM</div>
+        <div>
+          <div style="font-weight:800">AddonMarket</div>
+          <div class="muted" style="font-size:13px">Minecraft addons & packs</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#store">Store</a>
+        <a href="#templates">Templates</a>
+        <a href="#contact" class="pill">Contact</a>
+      </nav>
+    </header><section class="hero">
+  <div>
+    <div class="card">
+      <h1>Sell Minecraft addons. No fuss. Start today.</h1>
+      <p class="lead">Clean landing template to showcase your addons, packs, and website templates. Fast, responsive and easy to customize.</p>
+      <div class="cta">
+        <a class="btn" href="#store">Explore Addons</a>
+        <a class="btn ghost" href="#templates">Get Template</a>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <div style="font-weight:800">Fast</div>
+          <div class="muted" style="font-size:13px">Lightweight — loads in <1s</div>
+        </div>
+        <div class="feature">
+          <div style="font-weight:800">Customisable</div>
+          <div class="muted" style="font-size:13px">Change colors, fonts, images</div>
+        </div>
+        <div class="feature">
+          <div style="font-weight:800">Monetize</div>
+          <div class="muted" style="font-size:13px">Ads, direct downloads, or Patreon</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <aside>
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <div class="muted">Top Seller</div>
+        <div class="badge">New</div>
+      </div>
+      <div class="store-cards">
+        <div class="addon">
+          <img src="https://assets.addon.example/dragon-thumb.jpg" alt="Dragon Pack" />
+          <div class="meta">
+            <div style="font-weight:800">Dragon Rider Pack</div>
+            <div class="muted" style="font-size:13px">Custom mobs + textures</div>
+            <div style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+              <div class="price">₹199</div>
+              <a class="download" href="#">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="addon">
+          <img src="https://assets.addon.example/villager-thumb.jpg" alt="Villager pack" />
+          <div class="meta">
+            <div style="font-weight:800">Pro Villagers</div>
+            <div class="muted" style="font-size:13px">AI behavior tweaks</div>
+            <div style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+              <div class="price">Free</div>
+              <a class="download" href="#">Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;text-align:center" class="muted">Want these exact sections for your store? Replace images & text — ready to go.</div>
+    </div>
+
+    <div style="margin-top:12px" class="card">
+      <div style="font-weight:800">Why sell here?</div>
+      <ul class="muted" style="margin-top:8px;font-size:14px;line-height:1.6">
+        <li>Simple checkout flow (link to Gumroad/PayTM)</li>
+        <li>Showcase videos & screenshots</li>
+        <li>Embed your YouTube showcase</li>
+      </ul>
+    </div>
+  </aside>
+</section>
+
+<section id="templates" style="margin-top:28px">
+  <div class="card">
+    <h2 style="margin-bottom:8px">Templates included</h2>
+    <p class="muted">You get 3 layout variants: Landing, Store grid, Single addon page. Fully editable HTML/CSS.</p>
+    <div class="grid-3" style="margin-top:12px">
+      <div class="card">
+        <div style="font-weight:800">Landing</div>
+        <div class="muted" style="font-size:13px;margin-top:6px">Hero, top sellers, testimonials</div>
+      </div>
+
+      <div class="card">
+        <div style="font-weight:800">Store Grid</div>
+        <div class="muted" style="font-size:13px;margin-top:6px">Pagination-ready store layout</div>
+      </div>
+
+      <div class="card">
+        <div style="font-weight:800">Addon Page</div>
+        <div class="muted" style="font-size:13px;margin-top:6px">Download, changelog, screenshots</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="margin-top:18px">
+  <div class="card">
+    <h3>Get the template</h3>
+    <p class="muted" style="margin-bottom:8px">I can customize the template for your brand — change colors, fonts, images and add download/pay links.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn" href="#">Buy - ₹399</a>
+      <a class="btn ghost" href="#">Customise (+₹499)</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Built with ❤️ for Minecraft creators • © AddonMarket
+</footer>
+
+  </div>  <script>
+    // small JS for demo — replace with your own
+    document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();alert('Demo link — replace with your download/payment URL') }))
+  </script></body>
+</html>
